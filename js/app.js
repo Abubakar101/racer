@@ -10,7 +10,13 @@ window.onload = function () {
   const firstCar = document.querySelector("#first");
   const secondCar = document.querySelector("#second");
   let winningTime = true;
+  let gameStarts = true;
   button.addEventListener("click", function () {
+    // Broswer-cache reloads when gameStarts condition is false.
+    if (!gameStarts) {
+      window.location.reload();
+    }
+    gameStarts = false;
     // count-down-timer starts i.e., 5,4,3,2,1
     const countDownTimer = document.querySelector(".timer");
     let countDown = 5;

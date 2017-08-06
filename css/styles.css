@@ -1,0 +1,85 @@
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  width: 800px;
+  background-color: azure;
+  position: relative;
+  border-radius: 40px;
+}
+
+.raceCars {
+  height: 73px;
+  width: 100px;
+  background-color: navy;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 65px;
+  border-bottom-left-radius: 65px;
+  text-align: center;
+  color: red;
+  font-size: 56px;
+  line-height: 70px;
+  border: 2px solid black;
+}
+
+button {
+  border: none;
+  background: lightgreen;
+  letter-spacing: 4px;
+  padding: 10px;
+  transition: all .2s;
+  border-top-right-radius: 161px;
+  border-bottom-right-radius: 175px;
+  height: 345px;
+  margin-top: 70px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #6050f3;
+  color: #fff;
+  border-color: #6050f3;
+  cursor: pointer;
+}
+
+button:active {
+  border: 1px solid rgba(255, 255, 255, .75);
+}
+
+.timer {
+  height: 89px;
+  width: 542px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -97px;
+  font-size: 370%;
+  text-align: center;
+  line-height: 90px;
+  color: darkgray;
+  border-radius: 100%/900px 900px 100px 100px;
+  visibility: hidden;
+}
+
+.winner {
+  height: 188px;
+  width: 220px;
+  background-color: azure;
+  position: absolute;
+  font-size: 100px;
+  text-align: center;
+  line-height: 180px;
+  color: lawngreen;
+  left: 116px;
+  top: 65px;
+  border-radius: 100px;
+  visibility: hidden;
+}
